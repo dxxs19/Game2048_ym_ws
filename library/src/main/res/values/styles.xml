@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorPrimary">@color/wine_red</item>
+        <item name="colorPrimaryDark">@color/dark_wine_red</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="NormalText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BigText">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="editablePrefsItem" parent="@style/commonPrefsItem">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/editable_bg_selector</item>
+    </style>
+
+    <style name="commonPrefsItem">
+        <item name="android:paddingLeft">@dimen/SmallPadding</item>
+        <item name="android:paddingTop">@dimen/SmallPadding</item>
+        <item name="android:paddingBottom">@dimen/SmallPadding</item>
+        <item name="android:paddingRight">@dimen/SmallPadding</item>
+    </style>
+
+    <!-- 设置界面的左边栏按钮 -->
+    <style name="text_tab_btn_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:height">38dp</item>
+        <item name="android:textColor">@color/text_grey_to_red_selector</item>
+        <item name="android:background">@drawable/text_tab_btn_selector</item>
+    </style>
+</resources>

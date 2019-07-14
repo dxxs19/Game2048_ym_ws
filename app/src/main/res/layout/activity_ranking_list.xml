@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gamebg"
+                tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_rankinglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pink"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="@dimen/NormalPadding"
+        android:textSize="@dimen/BiggerTextSize"
+        android:textColor="@color/dark_wine_red"
+        android:text="排行榜"
+        android:orientation="vertical">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_below="@id/tv_rankinglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/NormalPadding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/NormalTextSize"
+            android:textColor="@color/dark_wine_red"
+            android:text="排名"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/NormalTextSize"
+            android:textColor="@color/dark_wine_red"
+            android:text="昵称"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/NormalTextSize"
+            android:textColor="@color/dark_wine_red"
+            android:text="得分"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/NormalTextSize"
+            android:textColor="@color/dark_wine_red"
+            android:text="更新日期"/>
+
+    </LinearLayout>
+
+    <include
+        android:layout_below="@id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/line"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

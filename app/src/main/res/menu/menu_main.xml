@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_rankinglist"
+          android:title="排行榜"/>
+
+    <item android:id="@+id/menu_startGame"
+          android:title="重新游戏"/>
+
+    <item android:id="@+id/menu_back"
+          android:icon="@mipmap/ic_launcher"
+          android:title="撤消"/>
+
+    <item android:id="@+id/menu_setting"
+          android:title="设置"/>
+
+    <item android:id="@+id/menu_myapps"
+          android:title="我的应用"/>
+
+    <item android:id="@+id/menu_shared"
+          android:title="分享应用"/>
+
+    <item android:id="@+id/menu_more"
+          android:title="更多"/>
+
+    <item android:id="@+id/menu_test"
+          android:visible="false"
+          android:title="测试"/>
+
+</menu>

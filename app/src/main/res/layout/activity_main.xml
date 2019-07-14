@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gamebg"
+                tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:padding="@dimen/NormalPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pink"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/current_mode"/>
+
+            <TextView
+                android:id="@+id/tv_curentMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BigText"
+                android:textColor="@color/dark_wine_red"
+                android:text="2048"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BigText"
+                android:text="@string/top_score"/>
+
+            <TextView
+                android:id="@+id/tvTopScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BigText"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toLeftOf="@id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background"
+            android:layout_marginRight="@dimen/BigPadding"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BigText"
+                android:text="@string/score"/>
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BigText"
+                android:text="0"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.wei.game2048.widgets.GameView
+        android:id="@+id/gameView"
+        android:layout_below="@id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.wei.game2048.widgets.GameView>
+
+    <TextView
+        android:id="@+id/txt_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前积分："
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>
